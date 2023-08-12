@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.title {
+  font-size: 4.5rem;
+}
+
+.instructions {
+  font-size: 2rem;
+}
