@@ -5,17 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
-    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.ico" />
+    <script src="script.js" type="module" defer></script>
   </head>
   <body>
     <div class="container">
       <h1 class="title">Rock, Paper, Scissors!</h1>
       <p class="instructions">Please choose a move:</p>
-      <ul class="buttons">
-        <li class="btn">
+      <ul class="options">
+        <li class="option" data-option="rock">
           <svg
-            width="6rem"
-            height="6rem"
+            width="96"
+            height="96"
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -25,11 +26,11 @@
             />
           </svg>
         </li>
-        <li class="btn">
+        <li class="option" data-option="paper">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="6rem"
-            height="6rem"
+            width="96"
+            height="96"
             fill="currentColor"
             class="bi bi-file-earmark-fill"
             viewBox="0 0 16 16"
@@ -39,11 +40,11 @@
             />
           </svg>
         </li>
-        <li class="btn">
+        <li class="option" data-option="scissors">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="6rem"
-            height="6rem"
+            width="96"
+            height="96"
             fill="currentColor"
             class="bi bi-scissors"
             viewBox="0 0 16 16"
@@ -54,6 +55,14 @@
           </svg>
         </li>
       </ul>
+
+      <h2 class="outcome"></h2>
+
+      <div class="points">
+        <div>Player: <span id="player-score">0</span></div>
+        <div>CPU: <span id="cpu-score">0</span></div>
+        <div>Ties: <span id="ties">0</span></div>
+      </div>
     </div>
   </body>
 </html>

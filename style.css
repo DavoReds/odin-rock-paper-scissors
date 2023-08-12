@@ -15,6 +15,10 @@ li {
   list-style-type: none;
 }
 
+svg {
+  background: rgba(0, 0, 0, 0);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -31,30 +35,52 @@ li {
   font-size: 2rem;
 }
 
-.buttons {
+.options {
   margin-top: 4rem;
   display: flex;
   gap: 4rem;
   align-items: center;
 }
 
-.btn {
+.option {
   padding: 3rem;
   border: black solid 4px;
   border-radius: 1rem;
   cursor: pointer;
 }
 
-.btn,
-.btn * {
+.option,
+.option * {
   transition: all 0.2s;
 }
 
-.btn:hover {
+.option:hover {
   background: black;
   color: white;
 }
 
-svg {
-  background: rgba(0, 0, 0, 0);
+.outcome {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.points {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 6rem;
+}
+
+.points *,
+.rounds {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.points span,
+.rounds span {
+  font-weight: normal;
+}
+
+.rounds {
+  margin-top: 3rem;
 }
