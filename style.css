@@ -6,6 +6,13 @@
 
 * {
   margin: 0;
+  font-family: inherit;
+  background: inherit;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
 }
 
 .container {
@@ -13,7 +20,7 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 
 .title {
@@ -22,4 +29,32 @@
 
 .instructions {
   font-size: 2rem;
+}
+
+.buttons {
+  margin-top: 4rem;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.btn {
+  padding: 3rem;
+  border: black solid 4px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn,
+.btn * {
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+svg {
+  background: rgba(0, 0, 0, 0);
 }
